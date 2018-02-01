@@ -1,4 +1,4 @@
-# GIPHY SEARCH
+# MAGIC SEARCH
 
 ## Introduction
 Looking for interesting gifs??? Here I presents GIPHY SEARCH! Users can find bunch of gifs of any field they want by using my GIPHY SEARCH app.
