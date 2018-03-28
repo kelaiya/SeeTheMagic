@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, '..', 'public')))
 
 app.use(morgan('dev'));
 // Sends index.html
-app.use('*', (req, res, next) => {
+app.use('*', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public/index.html'));
 })
 
