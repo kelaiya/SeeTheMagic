@@ -10,10 +10,6 @@ const bodyParser = require('body-parser');
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/bundle.js', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'public/bundle.js'));
-})
-
 app.use(express.static(path.join(__dirname, '..', 'public')))
 
 app.use(morgan('dev'));
