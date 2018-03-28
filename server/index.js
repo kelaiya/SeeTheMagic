@@ -8,9 +8,6 @@ module.exports = app;
 app.use(express.static(path.join(__dirname, '..', 'public')))
 
 
-// Logging middleware
-app.use(morgan('dev'));
-  
 // Sends index.html
 app.use('*', (req, res, next) => {
   res.sendFile(path.join(__dirname, '..', 'public/index.html'));
@@ -24,5 +21,5 @@ app.use((err, req, res, next) => {
 })
 
 // Start listening 
-app.listen(8080, () => console.log('Mixing it up on port 8080'))
+app.listen(process.env.PORT || 8080, () => console.log('Mixing it up on port 8080'))
 

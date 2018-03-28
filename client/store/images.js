@@ -18,7 +18,6 @@ export function fetchImage (pic) {
   return function thunk(dispatch) {
     return axios.get(`http://api.giphy.com/v1/gifs/search?q=${pic}&api_key=4zqMjqn9oECYbu2ZwHgseweLyahB2IxR&limit=5`)
     .then(res => {
-        console.log("magic", res);
         return res.data
       })
       .then(images => {
