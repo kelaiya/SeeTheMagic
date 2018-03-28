@@ -15,7 +15,7 @@ export default class Routes extends Component {
       <Router history={history}>
      
         	<Switch>
-        		<Route exact path='/images' component={Home} />
+        		<Route exact path='/' component={Home} />
         	</Switch>
        
       </Router>
