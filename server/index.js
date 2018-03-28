@@ -3,8 +3,12 @@ const express = require('express');
 const morgan = require('morgan');
 const app = express();
 module.exports = app;
+const bodyParser = require('body-parser');
 
 // Static file-serving middleware
+// body parsing middleware
+  app.use(bodyParser.json());
+  app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '..', 'public')))
 
 app.use(morgan('dev'));
