@@ -1,7 +1,7 @@
 module.exports = {
   entry: './client/index.js', // entry point-> ./client/index.js
   output: {
-    path: __dirname + '/',
+    path: __dirname,
     filename: './public/bundle.js'  // output-> ./public/bundle.js (webpack will create the output file)
   },
   devtool: 'source-map',
